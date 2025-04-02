@@ -1,5 +1,5 @@
 import { Router } from "express";
-import {  login,  register , obtenerUsuarios} from "../db/usuariosBD.js";
+import {  login,  register , obtenerUsuarios, borrarUsuario, actualizarUsuario} from "../db/usuariosBD.js";
 import { usuarioAutorizado, adminAutorizado } from "../middlewares/funcionesPassword.js";
 import { temperatureHistory, client,  publicarMedicamento } from "../mqtt/mqtt.js";
 import Medicamento from "../models/medicamento.js";
